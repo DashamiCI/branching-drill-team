@@ -9,6 +9,10 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
+def divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero.")
+    return a / b
 
 if __name__ == "__main__":
     x = 10
@@ -17,3 +21,4 @@ if __name__ == "__main__":
     print("Addition:", add(x, y))
     print("Subtraction:", subtract(x, y))
     print("Multiplication:", multiply(x, y))
+    print("Division:", divide(x, y))
